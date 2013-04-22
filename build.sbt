@@ -1,8 +1,10 @@
-name := "CMU ARK TweetNLP: Twitter POS tagger"
+name := "ark-tweet-nlp"
 
 organization := "edu.cmu.cs"
 
 autoScalaLibrary := false
+
+crossPaths := false
 
 version := "0.3.2"
 
@@ -15,7 +17,10 @@ libraryDependencies ++= Seq(
   "com.google.guava" % "guava" % "10.0.1",
   "junit" % "junit" % "4.8.2",
   "org.hamcrest" % "hamcrest-all" % "1.1",
-  "com.fasterxml.jackson.core" % "jackson-databind" % "2.0.0"
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.0.0",
+  "edu.stanford.nlp" % "stanford-corenlp" % "1.2.0",
+  "edu.berkeley.nlp" % "berkeleyparser" % "r32",
+  "net.sf.trove4j" % "trove4j" % "3.0.3"
 )
 
 publishMavenStyle := true
